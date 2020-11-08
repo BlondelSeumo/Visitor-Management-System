@@ -1,0 +1,287 @@
+.select2-container--default .select2-selection--multiple {
+    background-color: #f2f2f2 !important;
+}
+.select2-container--default.select2-container--focus .select2-selection--multiple {
+     border: solid black 1px !important;
+    outline: 0 !important;
+}
+.select2-container--default .select2-selection--multiple {
+    background-color: #f2f2f2 !important;
+    border: 1px solid #f2f2f2 !important;
+}
+.select2-container--default.select2-container--focus .select2-selection--multiple {
+    border: solid #f2f2f2 1px !important;
+    outline: 0 !important;
+}
+.card-background {
+    background-color: #edeef6 !important;
+}
+
+.ul-background {
+    background-color: #fff !important;
+}
+ div.scroll-menu {
+     overflow: auto;
+     white-space: nowrap;
+ }
+.h3-p h3{
+    color: #ffffff;
+}
+.h3-p p{
+    color: #ffffff;
+}
+div.scroll-menu a {
+    display: inline-block;
+    /*color: white;*/
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+}
+
+div.scroll-menu a:hover {
+    /*background-color: #777;*/
+}
+.bd-placeholder-img {
+    font-size: 1.125rem;
+    text-anchor: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+@media (min-width: 768px) {
+    .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+    }
+}
+
+/* CHECKED STYLES */
+[type=radio]:checked + img {
+    border: 3px solid #33cc30;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+
+}
+
+.image-width-site-logo {
+    height: 150px;
+    width: 150px;
+}
+
+img {
+    vertical-align: middle;
+}
+
+.img-responsive {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.profile-user-img {
+    margin: 0 auto;
+    width: 100px;
+    height: 100px;
+    padding: 3px;
+    border: 3px solid #d2d6de;
+}
+
+.img-circle {
+    border-radius: 50%;
+}
+
+/* Table responsive css*/
+/*Unseen Column*/
+@media only screen and (max-width: 800px) {
+    #unseen table td:nth-child(2),
+    #unseen table th:nth-child(2) {display: none;}
+}
+
+@media only screen and (max-width: 640px) {
+    #unseen table td:nth-child(4),
+    #unseen table th:nth-child(4),
+    #unseen table td:nth-child(7),
+    #unseen table th:nth-child(7),
+    #unseen table td:nth-child(8),
+    #unseen table th:nth-child(8){display: none;}
+}
+
+/*flip-scroll*/
+
+@media only screen and (max-width: 800px) {
+    #flip-scroll .cf:after { visibility: hidden; display: block; font-size: 0; content: " "; clear: both; height: 0; }
+    #flip-scroll * html .cf { zoom: 1; }
+    #flip-scroll *:first-child+html .cf { zoom: 1; }
+    #flip-scroll table { width: 100%; border-collapse: collapse; border-spacing: 0; }
+
+    #flip-scroll th,
+    #flip-scroll td { margin: 0; vertical-align: top; }
+    #flip-scroll th { text-align: left; }
+    #flip-scroll table { display: block; position: relative; width: 100%; }
+    #flip-scroll thead { display: block; float: left; }
+    #flip-scroll tbody { display: block; width: auto; position: relative; overflow-x: auto; white-space: nowrap; }
+    #flip-scroll thead tr { display: block; }
+    #flip-scroll th { display: block; text-align: right; }
+    #flip-scroll tbody tr { display: inline-block; vertical-align: top; }
+    #flip-scroll td { display: block; min-height: 1.25em; text-align: left; }
+
+
+    /* sort out borders */
+
+    #flip-scroll th { border-bottom: 0; border-left: 0; }
+    #flip-scroll td { border-left: 0; border-right: 0; border-bottom: 0; }
+    #flip-scroll tbody tr { border-left: 1px solid #babcbf; }
+    #flip-scroll th:last-child,
+    #flip-scroll td:last-child { border-bottom: 1px solid #babcbf; }
+}
+
+/*no more table*/
+
+@media only screen and (max-width: 800px) {
+    /* Force table to not be like tables anymore */
+    .no-more-tables table,
+    .no-more-tables thead,
+    .no-more-tables tbody,
+    .no-more-tables th,
+    .no-more-tables td,
+    .no-more-tables tr {
+        display: block;
+    }
+
+    /* Hide table headers (but not display: none;, for accessibility) */
+    .no-more-tables thead tr {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+
+    .no-more-tables tr { border: 1px solid #ccc; }
+
+    .no-more-tables td {
+        /* Behave like a "row" */
+        border: none;
+        border-bottom: 1px solid #eee;
+        position: relative;
+        padding-left: 50% !important;
+        white-space: normal;
+        text-align:left;
+    }
+
+    .no-more-tables td:before {
+        /* Now like a table header */
+        position: absolute;
+        /* Top/left values mimic padding */
+        top: 6px;
+        left: 6px;
+        width: 45%;
+        padding-right: 10px;
+        white-space: nowrap;
+        text-align:left;
+        font-weight: bold;
+    }
+
+    /*
+    Label the data
+    */
+    .no-more-tables td:before { content: attr(data-title); }
+}
+.sidebar-hidden {
+    visibility: hidden;
+}
+/* Tool tip */
+.tooltip-custom {
+    position: relative;
+    display: inline-block;
+    color: #006080;
+}
+
+.tooltip-custom .tooltip-text {
+    visibility: hidden;
+    position: absolute;
+    width: 75px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 0.3s;
+    font-size: 10px;
+}
+
+.tooltip-custom:hover .tooltip-text {
+    visibility: visible;
+    opacity: 1;
+}
+
+.tooltip-custom:hover .tooltip-text {
+    visibility: visible;
+    opacity: 1;
+}
+.tooltip-right {
+    top: -5px;
+    left: 125%;
+}
+
+.tooltip-right::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 100%;
+    margin-top: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent #555 transparent transparent;
+}
+
+.tooltip-bottom {
+    top: 90%;
+    left: 100%;
+    margin-left: -50px;
+}
+
+.tooltip-bottom::after {
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent #555 transparent;
+}
+
+.tooltip-top {
+    bottom: 95%;
+    left: 100%;
+    margin-left: -50px;
+}
+
+.tooltip-top::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+
+.tooltip-left {
+    top: -5px;
+    bottom:auto;
+    right: 128%;
+}
+.tooltip-left::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    margin-top: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent transparent #555;
+}
